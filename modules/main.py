@@ -29,8 +29,7 @@ bot = Client(
 
 @bot.on_message(filters.command(["start"]))
 async def account_login(bot: Client, m: Message):
-    editable = await m.reply_text("**ℍɪɪ 𝔹ᴀʙʏ\n\n  𝔾ɪᴠᴇ /Batman
- ℂᴏᴍᴍᴀɴᴅ ᴛᴏ 𝔻ᴏᴡɴʟᴀᴏᴅ 𝔽ʀᴏᴍ ᴀ 𝕋ᴇ𝕩ᴛ ғɪʟᴇ.\n**")
+    editable = await m.reply_text("**ℍɪɪ 𝔹ᴀʙʏ\n\n  𝔾ɪᴠᴇ /Batman ℂᴏᴍᴍᴀɴᴅ ᴛᴏ 𝔻ᴏᴡɴʟᴀᴏᴅ 𝔽ʀᴏᴍ ᴀ 𝕋ᴇ𝕩ᴛ ғɪʟᴇ.\n**")
 
 
 @bot.on_message(filters.command("stop"))
@@ -40,7 +39,7 @@ async def restart_handler(_, m):
 
 
 
-@bot.on_message(filters.command(["ankush"]))
+@bot.on_message(filters.command(["Batman"]))
 async def account_login(bot: Client, m: Message):
     editable = await m.reply_text('**ℍɪɪɪ 𝔹ᴀʙʏ \n\n 𝕋𝕆 ᴅᴏᴡɴʟᴏᴀᴅ ᴀ ᴛᴇ𝕤ᴛ ғɪʟᴇ 𝕤ᴇɴᴅ ʜᴇʀᴇ ⚡️**')
     input: Message = await bot.listen(editable.chat.id)
@@ -99,8 +98,7 @@ async def account_login(bot: Client, m: Message):
     
     
 
-    await editable.edit("**Enter A Captio to add Otherwise send**   **`Batman
-`**")
+    await editable.edit("**Enter A Captio to add Otherwise send**   **`Batman`**")
     input3: Message = await bot.listen(editable.chat.id)
     raw_text3 = input3.text
     await input3.delete(True)
@@ -187,8 +185,7 @@ async def account_login(bot: Client, m: Message):
                         time.sleep(e.x)
                         continue
                 else:
-                    Show = f"**⥥ 🄳🄾🅆🄽🄻🄾🄰🄳🄸🄽🄶⬇️⬇️... »**\n\n**Name »** `{name}\nQuality » {raw_text2}`\n\n**Url »** `{url}`\n\n🤖𝔹ᴏᴛ 𝕄ᴀᴅᴇ 𝔹ʏ ✨❤️Batman
-❤️✨\n\n**NJR
+                    Show = f"**⥥ 🄳🄾🅆🄽🄻🄾🄰🄳🄸🄽🄶⬇️⬇️... »**\n\n**Name »** `{name}\nQuality » {raw_text2}`\n\n**Url »** `{url}`\n\n🤖𝔹ᴏᴛ 𝕄ᴀᴅᴇ 𝔹ʏ ✨❤️Batman❤️✨\n\n**NJR
 **"
                     prog = await m.reply_text(Show)
                     res_file = await helper.download_video(url, cmd, name)
