@@ -103,7 +103,7 @@ async def account_login(bot: Client, m: Message):
     raw_text3 = input3.text
     await input3.delete(True)
     highlighter  = f"️ ⁪⁬⁮⁮⁮"
-    if raw_text3 == 'Ankush':
+    if raw_text3 == 'Batman':
         MR = highlighter 
     else:
         MR = raw_text3
